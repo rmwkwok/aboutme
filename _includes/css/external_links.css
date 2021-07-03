@@ -1,0 +1,22 @@
+
+a.external_links {
+  text-decoration: none;
+  opacity: .6;
+}
+
+a.external_links:hover {
+  opacity: 1;
+}
+
+ul.external_links
+{
+	list-style-type: none;
+}
+
+ul.external_links li:before {
+    font-family: 'FontAwesome';
+    content: '\f0c1';
+    margin:0 5px 0 -15px;
+    list-style-type: none;
+    opacity: .6;
+}

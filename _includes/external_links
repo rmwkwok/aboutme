@@ -1,0 +1,20 @@
+{% if include.id %}
+  {% assign external_links = page.[include.id] %}
+{% else %}
+  {% assign external_links = page.external_links %}
+{% endif %}
+
+<ul class="external_links">
+{% for link in external_links %}
+    <li>
+        <a href="{{ link.url }}" class="external_links">
+            {% if link.faicon %}
+            <i class="{{ link.faicon }}"></i>
+            {% endif %}
+            <font style="font-size: smaller; font-weight: bold; ">{{ link.text }}</font>
+        </a>
+        <font style="font-size: smaller;"> | </font>
+        <a href="{{ link.url }}" class="external_links" target="_blank"><i class="fa fa-external-link"></i></a>
+    </li>
+{% endfor %}
+</ul>

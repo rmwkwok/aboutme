@@ -1,0 +1,37 @@
+{% if include.id %}
+  {% assign gallery = page.[include.id] %}
+{% else %}
+  {% assign gallery = page.gallery %}
+{% endif %}
+
+{% if gallery.size == 2 %}
+  {% assign gallery_layout = 'half' %}
+{% elsif gallery.size >= 3 %}
+  {% assign gallery_layout = 'third' %}
+{% else %}
+  {% assign gallery_layout = '' %}
+{% endif %}
+
+<center>
+<figure class="{{ gallery_layout }} {{ include.class }}">
+  {% for img in gallery %}
+    {% if img.url %}
+      <a href="{{ img.url }}"
+        {% if img.title %}title="{{ img.title }}"{% endif %}
+        class="image-popup"
+      >
+        <img src="{{ img.image_path }}"
+          alt="{% if img.alt %}{{ img.alt }}{% endif %}"
+          style="width: calc( 80% / {{ gallery.size | at_least: 3 }} - 0.5em); height: 100px"
+          >
+      </a>
+    {% else %}
+      <img src="{{ img.image_path }}"
+        alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+    {% endif %}
+  {% endfor %}
+  {% if include.caption %}
+    <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+  {% endif %}
+</figure>
+</center>

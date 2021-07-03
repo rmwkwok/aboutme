@@ -1,5 +1,8 @@
 ---
 ---
+
+{% include css/external_links.css %}
 {% include css/base.css %}
 {% include css/skeleton.css %}
 {% include css/main.css %}
+{% include css/magnific-popup.css %}
