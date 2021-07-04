@@ -3,7 +3,6 @@ title: "Resume and links"
 bg: "#269658"
 color: white
 fa-icon: bicycle
-style: left
 external_links:
 - text: Resume
   url: 

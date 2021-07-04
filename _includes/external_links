@@ -11,9 +11,9 @@
             {% if link.faicon %}
             <i class="{{ link.faicon }}"></i>
             {% endif %}
-            <font style="font-size: smaller; font-weight: bold; ">{{ link.text }}</font>
+            <font style="font-weight: bold; ">{{ link.text }}</font>
         </a>
-        <font style="font-size: smaller;"> | </font>
+        <font> | </font>
         <a href="{{ link.url }}" class="external_links" target="_blank"><i class="fa fa-external-link"></i></a>
     </li>
 {% endfor %}
