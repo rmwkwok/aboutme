@@ -13,7 +13,7 @@
 {% endif %}
 
 <center>
-<figure class="{{ gallery_layout }} {{ include.class }}">
+<div class="gallery">
   {% for img in gallery %}
     {% if img.url %}
       <a href="{{ img.url }}"
@@ -33,5 +33,5 @@
   {% if include.caption %}
     <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
   {% endif %}
-</figure>
+</div>
 </center>

@@ -5,7 +5,7 @@ color: white
 fa-icon: bicycle
 external_links:
 - text: Resume
-  url: 
+  url: https://drive.google.com/file/d/1itK-uTGp2JzDz_7GGpiiEODPatCPcLZp/view?usp=sharing
   faicon: fa fa-file fa-2x
 - text: LinkedIn
   url: https://www.linkedin.com/in/rmwkwok
