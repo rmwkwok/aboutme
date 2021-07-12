@@ -18,6 +18,7 @@ title:       "Raymond Kwok's page"
 keywords:    "causality, A/B Testing, Data Scientist"
 description: "A single-page template for Jekyll based blogs (like what you'd use on github pages!)"
 source_link: "https://rmwkwok.github.io/aboutme/"
+google_analytics_key: UA-201975430-1
 
 ### template colors, used site-wide via css ###
 colors:
