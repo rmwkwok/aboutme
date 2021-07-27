@@ -1,0 +1,11 @@
+div.jobs {
+  background-color: #444;
+  flex:1 1 auto;
+  min-height:1px;
+  padding:15px 15px 15px 15px;
+  margin: 10px 15px 10px 15px;
+}
+
+div.jobcompany {
+  color: #ff8080
+}

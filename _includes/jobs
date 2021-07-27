@@ -1,0 +1,18 @@
+{% if include.id %}
+  {% assign jobs = page.[include.id] %}
+{% else %}
+  {% assign jobs = page.jobs %}
+{% endif %}
+
+<div class="jobs-container">
+{% for job in jobs %}
+    <div class="jobs">
+        <h4>
+        <strong>{{ job.title }}</strong>
+        <br>
+        <div class="jobcompany">{{ job.company }} {% if job.companydesc %} <strong>·</strong> {{ job.companydesc }} {% endif %}</div>
+        {% if job.period %} {{ job.period }} {% endif %}
+        </h4>
+    </div>
+{% endfor %}
+</div>
