@@ -1,6 +1,6 @@
 ---
 title: "Resume and links"
-bg: "#269658"
+bg: "#00344d"
 color: white
 fa-icon: bicycle
 external_links:
