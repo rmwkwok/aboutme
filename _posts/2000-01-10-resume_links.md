@@ -46,7 +46,7 @@ jobs:
   company: Chinese University of Hong Kong
   companydesc: Collaborator of Dayabay Reactor Neutrino Experiment
 edu:
-- title: MS in Engineering, Data Science (GPA: 4)
+- title: "MS in Engineering, Data Science (GPA: 4)"
   company: University of California, Riverside
 - title: BSc (Hons) in Physics
   company: Chinese University of Hong Kong
