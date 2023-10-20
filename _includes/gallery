@@ -22,7 +22,7 @@
       >
         <img src="{{ img.image_path }}"
           alt="{% if img.alt %}{{ img.alt }}{% endif %}"
-          style="width: calc( 80% / {{ gallery.size | at_least: 3 }} - 0.5em); height: 100px"
+          style="height: 100px"
           >
       </a>
     {% else %}
